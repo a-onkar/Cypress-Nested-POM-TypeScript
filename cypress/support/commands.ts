@@ -1,7 +1,7 @@
 
 /* Global Variable Declarations */
 
-import { last, update } from "cypress/types/lodash";
+import {} from "cypress/types/lodash";
 
 
 /* Custom Command Global Namespace Declaration */

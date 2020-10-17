@@ -1,5 +1,5 @@
 {
-    "$schema": "https://on.cypress.io/cypress.schema.json",
-    "baseUrl": "http://localhost:3000",
-    "integrationFolder": "cypress/tests"
+  "$schema": "https://on.cypress.io/cypress.schema.json",
+  "baseUrl": "http://todomvc-app-for-testing.surge.sh",
+  "integrationFolder": "cypress/tests"
 }

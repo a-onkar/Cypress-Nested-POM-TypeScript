@@ -1,5 +1,5 @@
 {
-  "userName": "scott",
+  "text": "Learn JavaScript",
   "password": "tiger",
   "dob": "01/01/2020",
   "state": "['Maharashtra', 'Karnataka', 'Ladakh', 'Jammu', 'Kashmir']",

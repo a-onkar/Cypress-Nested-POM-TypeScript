@@ -1,4 +1,4 @@
-describe("Cypress RealWorld App - e2e scenarios", () => {
+describe("ToDo MVC App - e2e scenarios", () => {
   let testdata: any;
   const startDate: string = Cypress.moment().format("MM/DD/YYYY");
 

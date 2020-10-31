@@ -4,9 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "ng lint",
-    "lint:fix": "ng lint --fix",
     "opency": "./node_modules/.bin/cypress open",
     "runcy": "./node_modules/.bin/cypress run"
   },

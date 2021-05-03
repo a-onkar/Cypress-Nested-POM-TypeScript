@@ -5,19 +5,17 @@ describe("ToDo MVC App - e2e scenarios", () => {
   beforeEach(function () {
     cy.visit("/");
     cy.fixture("test-data-file").then((data) => (testdata = data));
-    // cy.viewport("iphone-6");
+    cy.viewport("iphone-6");
   });
 
   it("Add new ToDo, Assert item, assert checklist", () => {
-    cy.get(".new-todo")
-      .should("have.class", "new-todo")
-      .type("Learn JavaScript{enter}"); //Add item to ToDo list
-
-    cy.get("label").should("have.text", testdata.text); //Assertion: Verifies text of added item using tagname
-    cy.get(".toggle").should("not.be.checked"); //Assertion: Verifies the toggle button is unchecked using class-name
-    cy.get(".toggle").click(); // MArking todo as completed
-    cy.get(".toggle").should("be.checked"); //Assertion: Verifies the toggle button is checked
-    cy.get("label").should("have.css", "text-decoration-line", "line-through"); //Assertion: Verifies the item text is strikethrough
-    cy.get('.todo-list').should('have.descendants', 'li')
-   });
+    cy.get(".new-todo").should("have.class", "new-todo").type("Learn JavaScript{enter}"); 
+    cy.get("label").should("have.text", testdata.text); 
+    cy.get(".toggle").should("not.be.checked");
+    cy.get(".toggle").click();
+    cy.screenshot();
+    cy.get(".toggle").should("be.checked");
+    cy.get("label").should("have.css", "text-decoration-line", "line-through");
+    cy.get(".todo-list").should("have.descendants", "li");
+  });
 });

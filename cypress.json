@@ -1,5 +1,17 @@
 {
   "$schema": "https://on.cypress.io/cypress.schema.json",
   "baseUrl": "http://todomvc-app-for-testing.surge.sh",
-  "integrationFolder": "cypress/tests"
+  "integrationFolder": "cypress/tests",
+  "screenshotsFolder": "cypress/reports/mochareports/assets",
+  "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+        "reporterEnabled": "mochawesome",
+        "mochawesomeReporterOptions": {
+            "reportDir": "cypress/reports/mocha",
+            "quite": true,
+            "overwrite": false,
+            "html": false,
+            "json": true
+        }
+    }
 }
